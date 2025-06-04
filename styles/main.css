@@ -13,6 +13,7 @@ body {
     font-family: Arial, sans-serif;
     line-height: 1.6;
     color: #333;
+    background-color: #CFCFEA;
 }
 
 .container {
@@ -23,7 +24,7 @@ body {
 
 /* Header and Navigation */
 .header {
-    background-color: #ffffff;
+    background-color: #575A4B;
     box-shadow: 0 0.125rem 0.3125rem rgba(0,0,0,0.1); /* 2px 5px */
     position: fixed;
     width: 100%;
@@ -38,6 +39,7 @@ body {
         margin: 0 auto;
 
         .logo {
+            color: #CFCFEA;
             font-size: 1.5rem;
             font-family: "Tilt Prism", sans-serif;
             font-optical-sizing: auto;
@@ -73,7 +75,7 @@ body {
 
             a {
                 text-decoration: none;
-                color: #333;
+                color: #CFCFEA;
                 font-weight: 500;
                 transition: color 0.3s ease;
 
@@ -88,17 +90,30 @@ body {
 /* Hero Section */
 .hero {
     padding: 8rem 0 6rem 0; /* More vertical space, responsive */
-    background-color: #f5f5f5;
     text-align: center;
     margin-top: 4.5rem; /* 72px header height */
     display: flex;
     justify-content: space-between;
     align-items: center;
-    .left-container {
+
+    #left-container {
         width: 50%;
+
+        p {
+            color: #DDA448;
+        }
+
+        h1 {
+            color: #9D5C63;
+        }
     }
-    .right-container {
+    #right-container {
         width: 50%;
+        img {
+            max-width: 100%;
+            height: auto;
+            padding-right: 1em;
+        }
     }
 }
 
@@ -117,7 +132,6 @@ body {
 /* Portfolio Section */
 .portfolio {
     padding: 4rem 0;
-    background-color: #f5f5f5;
 
     .portfolio-grid {
         display: grid;
@@ -139,14 +153,17 @@ body {
 
 /* Footer */
 .footer {
-    background-color: #2c3e50;
-    color: #ffffff;
+    background-color: #2A2C24;
+    color: #CFCFEA;
     padding: 2rem 0;
     text-align: center;
 }
 
 /* Responsive Design */
 @media (max-width: 48em) { /* 768px */
+    #right-container {
+        display: none; 
+    }
     .header {
         .nav {
             flex-direction: row;
@@ -180,9 +197,6 @@ body {
             }
         }
     }
-    .container {
-        padding: 0 0.5rem;
-    }
     .hero {
         padding: 6rem 0 4rem 0;
         margin-top: 3.5rem;
@@ -192,5 +206,4 @@ body {
     .contact {
         padding: 2rem 0;
     }
-
 }
