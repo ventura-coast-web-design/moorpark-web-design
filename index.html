@@ -67,12 +67,19 @@
         </main>
 
         <footer class="footer">
-            <div class="container">
-                <p>&copy; 2024 Moorpark Web Design. All rights reserved.</p>
+            <div class="copyright-container">
+                <p>&copy; <span class="current-year"></span> Moorpark Web Design. All rights reserved.</p>
             </div>
         </footer>
 
         <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            const year = new Date().getFullYear();
+            document.querySelectorAll('.current-year').forEach(function(span) {
+                span.textContent = year;
+            });
+        });
+
         document.addEventListener('DOMContentLoaded', function() {
             const burger = document.querySelector('.burger');
             const navLinks = document.querySelector('.nav-links');

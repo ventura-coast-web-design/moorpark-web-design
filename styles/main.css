@@ -98,14 +98,14 @@ body {
 
     #left-container {
         width: 50%;
-
+/* 
         p {
             color: #DDA448;
         }
 
         h1 {
             color: #9D5C63;
-        }
+        } */
     }
     #right-container {
         width: 50%;
@@ -153,10 +153,15 @@ body {
 
 /* Footer */
 .footer {
-    background-color: #2A2C24;
-    color: #CFCFEA;
-    padding: 2rem 0;
-    text-align: center;
+    background-color: #575A4B;
+
+    .copyright-container {
+        background-color: #2A2C24;
+        color: #CFCFEA;
+        padding: 2rem 0;
+        text-align: center;
+    }
+    
 }
 
 /* Responsive Design */
