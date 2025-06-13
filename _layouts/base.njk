@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>{{ title }} | Moorpark Web Design</title>
+        <link rel="stylesheet" href="/assets/styles/main.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Tilt+Prism&display=swap" rel="stylesheet">
+        <script src="https://kit.fontawesome.com/b96b0b2690.js" crossorigin="anonymous"></script>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    </head>
+    <body>
+        {% include "partials/header.njk" %}
+        
+        <main>
+            {{ content | safe }}
+        </main>
+
+        {% include "partials/footer.njk" %}
+
+        <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            const year = new Date().getFullYear();
+            document.querySelectorAll('.current-year').forEach(function(span) {
+                span.textContent = year;
+            });
+        });
+
+        document.addEventListener('DOMContentLoaded', function() {
+            const burger = document.querySelector('.burger');
+            const navLinks = document.querySelector('.nav-links');
+            burger.addEventListener('click', function() {
+                navLinks.classList.toggle('open');
+                burger.setAttribute('aria-expanded', navLinks.classList.contains('open'));
+                document.body.classList.toggle('menu-open', navLinks.classList.contains('open'));
+            });
+        });
+        </script>
+    </body>
+</html> 

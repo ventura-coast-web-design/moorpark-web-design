@@ -1,0 +1,267 @@
+/* Reset and base styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 100%; /* 16px default, makes rems predictable */
+}
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    color: #333;
+    background-color: #CFCFEA;
+}
+
+.container {
+    max-width: 75rem; /* 1200px / 16 = 75rem */
+    margin: 0 auto;
+    padding: 0 1rem;
+}
+
+/* Header and Navigation */
+.header {
+    background-color: #575A4B;
+    box-shadow: 0 0.125rem 0.3125rem rgba(0,0,0,0.1); /* 2px 5px */
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 1000;
+}
+
+.nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 90%;
+    margin: 0 auto;
+}
+
+.logo {
+    width: 15%;
+    padding-top: 0.5em;
+    padding-bottom: 0.5em;
+}
+
+.burger {
+    display: none;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 2.5rem;
+    height: 2.5rem;
+    background: none;
+    border: none;
+    cursor: pointer;
+    z-index: 1100;
+}
+
+.burger i {
+    font-size: 1.5rem;
+    color: #333;
+}
+
+.nav-links {
+    display: flex;
+    list-style: none;
+    gap: 2rem;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: #CFCFEA;
+    font-weight: 500;
+    transition: color 0.3s ease;
+}
+
+.nav-links a:hover {
+    color: #3498db;
+}
+
+/* Hero Section */
+.hero {
+    padding: 8rem 0 6rem 0; /* More vertical space, responsive */
+    text-align: center;
+    margin-top: 4.5rem; /* 72px header height */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 95%;
+}
+
+#left-container {
+    width: 50%;
+}
+
+.hero-buttons {
+    margin-top: 2em;
+}
+
+.contact-button {
+    background-color: #3498db;
+    color: #fff;
+    padding: 0.75rem 1.5rem; /* 12px 24px */
+    border: none;
+    border-radius: 0.25rem; /* 4px */
+    font-size: 1rem; /* 16px */
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.contact-button:hover {
+    background-color: #2980b9;
+}
+
+.about-button {
+    background-color: transparent;
+    color: #333;
+    padding: 0.75rem 1.5rem; /* 12px 24px */
+    border: 2px solid #333; /* Border for contrast */
+    border-radius: 0.25rem; /* 4px */
+    font-size: 1rem; /* 16px */
+    cursor: pointer;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.about-button:hover {
+    background-color: #333;
+    color: #fff;
+}
+
+#right-container {
+    width: 50%;
+}
+
+#right-container img {
+    max-width: 100%;
+    height: auto;
+    padding-right: 1em;
+}
+
+/* Services Section */
+.services {
+    padding: 4rem 0;
+}
+
+.services-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(16rem, 1fr)); /* 256px */
+    gap: 2rem;
+    margin-top: 2rem;
+}
+
+/* Portfolio Section */
+.portfolio {
+    padding: 4rem 0;
+}
+
+.portfolio-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(18.75rem, 1fr)); /* 300px */
+    gap: 2rem;
+    margin-top: 2rem;
+}
+
+/* Contact Section */
+.contact {
+    padding: 4rem 0;
+}
+
+.contact-form {
+    max-width: 37.5rem; /* 600px */
+    margin: 2rem auto;
+}
+
+/* Footer */
+.footer {
+    background-color: #575A4B;
+}
+
+.footer-top {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 2rem 0;
+    width: 90%;
+    margin: 0 auto;
+    flex-direction: row;
+}
+
+.footer-logo {
+    width: 20%;
+    padding-top: 0.5em;
+    padding-bottom: 0.5em;
+}
+
+.copyright-container {
+    background-color: #2A2C24;
+    color: #CFCFEA;
+    padding: 2rem 0;
+    text-align: center;
+}
+
+/* Responsive Design */
+@media (max-width: 48em) { /* 768px */
+    .header .nav {
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        padding: 1rem 0;
+    }
+
+    .burger {
+        display: flex;
+        align-self: center;
+        margin: 0;
+    }
+
+    .nav-links {
+        position: absolute;
+        top: 100%;
+        left: 0;
+        width: 100%;
+        max-height: 0;
+        overflow: hidden;
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 0 1.5rem;
+        box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        gap: 1.5rem;
+        background: #fff;
+        transition: max-height 0.3s cubic-bezier(.77,0,.18,1), padding 0.3s;
+    }
+
+    .nav-links.open {
+        max-height: 20rem;
+        padding: 1rem 1.5rem 1.5rem 1.5rem;
+    }
+
+    .hero {
+        padding: 6rem 0 4rem 0;
+        margin-top: 3.5rem;
+    }
+
+    #right-container {
+        display: none;
+    }
+
+    .services,
+    .portfolio,
+    .contact {
+        padding: 2rem 0;
+    }
+
+    .footer-top {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .footer-logo {
+        width: 50%;
+        text-align: center;
+    }
+} 
