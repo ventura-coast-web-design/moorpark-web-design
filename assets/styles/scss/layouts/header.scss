@@ -1,0 +1,56 @@
+.header {
+  background-color: $secondary-color;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+  position: fixed;
+  width: 100%;
+  top: 0;
+  z-index: 1000;
+}
+
+.nav {
+  @include flex-center;
+  justify-content: space-between;
+  width: 90%;
+  margin: 0 auto;
+}
+
+.logo {
+  width: 15%;
+  padding-top: 0.5em;
+  padding-bottom: 0.5em;
+}
+
+.burger {
+  display: none;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 2.5rem;
+  height: 2.5rem;
+  background: none;
+  border: none;
+  cursor: pointer;
+  z-index: 1100;
+
+  i {
+    font-size: 1.5rem;
+    color: $text-color;
+  }
+}
+
+.nav-links {
+  display: flex;
+  list-style: none;
+  gap: 2rem;
+
+  a {
+    text-decoration: none;
+    color: $background-color;
+    font-weight: 500;
+    transition: color 0.3s ease;
+
+    &:hover {
+      color: $primary-color;
+    }
+  }
+} 

@@ -1,0 +1,26 @@
+.footer {
+  background-color: $secondary-color;
+}
+
+.footer-top {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 2rem 0;
+  width: 90%;
+  margin: 0 auto;
+  flex-direction: row;
+}
+
+.footer-logo {
+  width: 20%;
+  padding-top: 0.5em;
+  padding-bottom: 0.5em;
+}
+
+.copyright-container {
+  background-color: $footer-bg;
+  color: $background-color;
+  padding: 2rem 0;
+  text-align: center;
+} 
