@@ -1,3 +1,54 @@
+@use "../utils/variables" as *;
+@use "../utils/mixins" as *;
+
+.contact-banner {
+  background-color: $primary-color;
+  color: white;
+  padding: 0.5rem 0;
+  font-size: 0.9rem;
+  
+  .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .contact-info {
+    display: flex;
+    gap: 2rem;
+    align-items: center;
+    
+    span {
+      display: flex;
+      align-items: center;
+      gap: 0.5rem;
+    }
+    
+    a {
+      color: white;
+      text-decoration: none;
+      
+      &:hover {
+        text-decoration: underline;
+      }
+    }
+  }
+  
+  .contact-btn {
+    background-color: white;
+    color: $primary-color;
+    padding: 0.5rem 1rem;
+    border-radius: 0.25rem;
+    text-decoration: none;
+    font-weight: 600;
+    transition: background-color 0.3s ease;
+    
+    &:hover {
+      background-color: darken(white, 10%);
+    }
+  }
+}
+
 .header {
   background-color: $secondary-color;
   box-shadow: 0 2px 5px rgba(0,0,0,0.1);
