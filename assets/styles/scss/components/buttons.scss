@@ -1,3 +1,6 @@
+@use "sass:color";
+@use "../utils/variables" as *;
+
 .contact-button {
   background-color: $primary-color;
   color: #fff;
@@ -9,7 +12,7 @@
   transition: background-color 0.3s ease;
 
   &:hover {
-    background-color: darken($primary-color, 10%);
+    background-color: color.adjust($primary-color, $lightness: -10%);
   }
 }
 
