@@ -1,0 +1,94 @@
+@use "../utils/variables" as *;
+
+.about-hero {
+  padding: 8rem 0 4rem 0;
+  text-align: center;
+  margin-top: 4.5rem;
+  background-color: lighten($secondary-color, 10%);
+  color: white;
+  
+  h1 {
+    font-size: 3rem;
+    margin-bottom: 1rem;
+  }
+  
+  .lead {
+    font-size: 1.25rem;
+    opacity: 0.9;
+  }
+}
+
+.about-content {
+  padding: 4rem 0;
+  
+  .about-grid {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    gap: 3rem;
+    align-items: start;
+  }
+  
+  .about-text {
+    h2 {
+      color: $secondary-color;
+      margin-bottom: 1rem;
+      margin-top: 2rem;
+      
+      &:first-child {
+        margin-top: 0;
+      }
+    }
+    
+    p {
+      margin-bottom: 1.5rem;
+      line-height: 1.7;
+    }
+    
+    ul {
+      margin-left: 1.5rem;
+      
+      li {
+        margin-bottom: 0.5rem;
+        line-height: 1.6;
+      }
+    }
+  }
+  
+  .about-image {
+    img {
+      width: 100%;
+      height: auto;
+      border-radius: 0.5rem;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+    }
+  }
+}
+
+// Responsive design for About page
+@media (max-width: 48em) {
+  .about-hero {
+    padding: 6rem 0 3rem 0;
+    margin-top: 3.5rem;
+    
+    h1 {
+      font-size: 2rem;
+    }
+    
+    .lead {
+      font-size: 1.1rem;
+    }
+  }
+  
+  .about-content {
+    padding: 2rem 0;
+    
+    .about-grid {
+      grid-template-columns: 1fr;
+      gap: 2rem;
+    }
+    
+    .about-image {
+      order: -1;
+    }
+  }
+} 
