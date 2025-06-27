@@ -5,7 +5,7 @@
   padding: 8rem 0 4rem 0;
   text-align: center;
   margin-top: 4.5rem;
-  background-color: lighten($secondary-color, 10%);
+  background-color: color.adjust($secondary-color, $lightness: 10%);
   color: white;
   
   h1 {

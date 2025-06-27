@@ -1,5 +1,6 @@
 @use "../utils/variables" as *;
 @use "../utils/mixins" as *;
+@use "sass:color";
 
 .contact-banner {
   background-color: $primary-color;
@@ -44,7 +45,7 @@
     transition: background-color 0.3s ease;
     
     &:hover {
-      background-color: darken(white, 10%);
+      background-color: color.adjust(white, $lightness: -10%);
     }
   }
 }
