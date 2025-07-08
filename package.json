@@ -6,7 +6,8 @@
   "scripts": {
     "start": "npm run scss && eleventy --serve",
     "build": "npm run scss && eleventy",
-    "scss": "sass assets/styles/scss/main.scss assets/styles/main.css --no-source-map --style=expanded"
+    "scss": "sass assets/styles/scss/main.scss assets/styles/main.css --no-source-map --style=expanded",
+    "scss:watch": "sass assets/styles/scss/main.scss assets/styles/main.css --no-source-map --style=expanded --watch"
   },
   "dependencies": {
     "@11ty/eleventy": "^2.0.1",
