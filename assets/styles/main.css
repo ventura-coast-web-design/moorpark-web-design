@@ -161,16 +161,6 @@ body {
   height: 4rem;
   position: relative;
 }
-#hero-bottom::after {
-  content: "";
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  right: 0;
-  height: 2rem;
-  background-color: #261447;
-  clip-path: polygon(0% 60%, 100% 100%);
-}
 
 #left-container {
   width: 50%;

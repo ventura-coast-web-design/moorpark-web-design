@@ -1,4 +1,5 @@
 @use "../utils/variables" as *;
+@use "sass:color";
 
 // Container
 .container {
@@ -9,17 +10,25 @@
 
 // Hero Section
 .hero {
-  padding: 8rem 0 6rem 0;
+  padding: 8rem 0 1rem 0;
   text-align: center;
   margin-top: 4.5rem;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  width: 95%;
+  background-color: color.adjust($secondary-color, $lightness: 15%);
+  position: relative;
+}
+
+#hero-bottom {
+  background-color: color.adjust($secondary-color, $lightness: 15%);
+  height: 4rem;
+  position: relative;
 }
 
 #left-container {
   width: 50%;
+  padding-left: 1em;
 }
 
 .hero-buttons {
@@ -122,6 +131,14 @@
   .hero {
     padding: 6rem 0 4rem 0;
     margin-top: 3.5rem;
+  }
+
+  #hero-bottom {
+    height: 3rem;
+    
+    &::after {
+      height: 1.5rem;
+    }
   }
 
   #right-container {
