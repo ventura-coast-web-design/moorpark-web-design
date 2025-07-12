@@ -1,7 +1,7 @@
 @use "../utils/variables" as *;
 
 .footer {
-  background-color: $secondary-color;
+  background-color: $light-primary-color;
 }
 
 .footer-top {
@@ -12,6 +12,42 @@
   width: 90%;
   margin: 0 auto;
   flex-direction: row;
+
+  .footer-top-container {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 4rem;
+
+    .footer-links {
+      color: $secondary-color;
+    
+      li a {
+        text-decoration: none;
+        color: $secondary-color;
+
+      }
+    }
+  }
+
+  .footer-contact {
+    color: $secondary-color;
+
+    p {
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+
+      i {
+        padding: 0.5em;
+      }
+
+     a {
+      text-decoration: none;
+      color: $secondary-color;
+      }
+    }
+  }
 }
 
 .footer-logo {
@@ -21,8 +57,8 @@
 }
 
 .copyright-container {
-  background-color: $footer-bg;
-  color: $background-color;
+  background-color: $primary-color;
+  color: $secondary-color;
   padding: 2rem 0;
   text-align: center;
 } 
