@@ -14,10 +14,9 @@ title: Home
         </div>
     </div>
     <div id="right-container">
-        <img src="/assets/images/macbook.png" alt="Moorpark Web Design">
+        <img src="/assets/images/macbook.png" alt="portfolio-pictures">
     </div>
 </section>
-<section id="hero-bottom"/>
 
 <section id="services" class="services">
     <div class="container">
@@ -35,6 +34,61 @@ title: Home
             <!-- Portfolio items will go here -->
         </div>
     </div>
+</section>
+
+{% import "partials/pricing-card-macro.njk" as cards %}
+
+<section class="pricing-section">
+  <div class="container pricing-grid">
+    {{ cards.pricingCard({
+      title: "Lump Sum",
+      features: [
+        {text: "Design And Development", included: true},
+        {text: "$25/mo Hosting", included: true},
+        {text: "$100 fee Per Page after 5", included: true},
+        {text: "+$50/mo Unlimited Edits Add-on", included: true},
+        {text: "+$250 To Add A Blog", included: true},
+        {text: "24/7 Support", included: false},
+        {text: "Lifetime Updates", included: false}
+      ],
+      price: "$3800",
+      price_note: "+$25/mo Hosting",
+      button_text: "Get Started",
+      modifier: "lump-sum"
+    }) }}
+    {{ cards.pricingCard({
+      title: "Monthly",
+      features: [
+        {text: "Design And Development", included: true},
+        {text: "Includes Hosting", included: true},
+        {text: "$100 fee Per Page After 5", included: true},
+        {text: "+$250 To Add A Blog", included: true},
+        {text: "Unlimited Edits", included: true},
+        {text: "24/7 Support", included: true},
+        {text: "Lifetime Updates", included: true}
+      ],
+      price: "$175",
+      price_note: "Per Month",
+      button_text: "Get Started",
+      modifier: "monthly"
+    }) }}
+    {{ cards.pricingCard({
+      title: "Ecommerce",
+      features: [
+        {text: "Custom Store", included: true},
+        {text: "Configure Any Apps", included: true},
+        {text: "Integrated Shipping", included: true},
+        {text: "Store Tutorial Walkthrough", included: true},
+        {text: "Fully Editable In Store CMS", included: true},
+        {text: "+$50/mo Unlimited Edits", included: false},
+        {text: "24/7 Support", included: false}
+      ],
+      price: "$8k",
+      price_note: "Starting",
+      button_text: "Get Started",
+      modifier: "ecommerce"
+    }) }}
+  </div>
 </section>
 
 <section id="contact" class="contact">

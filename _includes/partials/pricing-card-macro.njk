@@ -1,0 +1,20 @@
+{% macro pricingCard(data) %}
+  <div class="pricing-card {{ data.modifier }}">
+    <h3>{{ data.title }}</h3>
+    <ul class="features">
+      {% for feature in data.features %}
+        <li>
+          {{ feature.text }}
+          {% if feature.included %}
+            <span class="check">&#10003;</span>
+          {% else %}
+            <span class="cross">&#10007;</span>
+          {% endif %}
+        </li>
+      {% endfor %}
+    </ul>
+    <div class="price">{{ data.price }}</div>
+    <div class="price-note">{{ data.price_note }}</div>
+    <a href="#contact" class="get-started-btn">{{ data.button_text }}</a>
+  </div>
+{% endmacro %} 
