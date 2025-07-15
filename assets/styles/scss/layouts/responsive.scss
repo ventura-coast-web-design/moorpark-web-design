@@ -29,7 +29,20 @@ main {
 #left-container {
   width: 50%;
   padding-left: 1em;
-}
+  color: $primary-color;
+
+    p {
+      font-size: 1.3em;
+
+    }
+    #subtext {
+      font-size: 1em;
+    }
+    .hero-phrase {
+      font-size: 2em;
+      font-weight: bolder;
+    }
+  }
 
 .hero-buttons {
   margin-top: 2em;
@@ -83,6 +96,14 @@ main {
 .pricing-section {
   padding: 4rem 0;
   background: $primary-color;
+
+  h1 {
+    color: white;
+    display: flex;
+    justify-content: center;
+    padding-bottom: 2rem;
+    padding-left: 1.5rem;
+  }
 }
 
 .pricing-grid {
@@ -93,8 +114,8 @@ main {
 }
 
 .pricing-card {
-  background: $light-primary-color;
-  color: $secondary-color;
+  background: $secondary-color;
+  color: $primary-color;
   border-radius: 1.5rem;
   box-shadow: 0 2px 12px rgba(0,0,0,0.07);
   padding: 2rem 1.5rem;
@@ -108,7 +129,7 @@ main {
   h3 {
     font-size: 2rem;
     margin-bottom: 1rem;
-    color: $secondary-color;
+    color: $primary-color;
     text-transform: uppercase;
     letter-spacing: 0.05em;
   }
@@ -123,48 +144,41 @@ main {
       align-items: center;
       margin-bottom: 0.5rem;
       font-size: 1rem;
-      .check { color: $secondary-color; }
-      .cross { color: #bbb; }
+      .check { color: $primary-color; }
+      .cross { color: $primary-color; }
     }
   }
   .price {
     font-size: 2.2rem;
     font-weight: bold;
     margin-bottom: 0.25rem;
-    color: $secondary-color;
+    color: $primary-color;
   }
   .price-note {
     font-size: 1rem;
-    color: $secondary-color;
+    color: $primary-color;
     margin-bottom: 1.5rem;
   }
   .get-started-btn {
-    background: $secondary-color;
-    color: $primary-color;
+    background: $primary-color;
+    color: white;
     border-radius: 2rem;
     padding: 0.75em 2em;
     font-weight: bold;
     text-decoration: none;
     transition: background 0.2s;
     &:hover {
-      background: color.adjust($secondary-color, $lightness: -10%);
+      background: color.adjust($primary-color, $lightness: -10%);
     }
   }
   &.monthly {
-    background: $primary-color;
-    color: $background-color;
-    border: 2px solid $secondary-color;
+    background: $light-primary-color;
+    color: $primary-color;
     border-radius: 2rem;
-    h3, .price { color: $background-color; }
   }
   &.ecommerce {
     background: $background-color;
     color: $primary-color;
-    h3 { color: $primary-color; }
-    .price { color: $primary-color; }
-    .price-note { color: $light-primary-color; }
-    li .check { color: $light-primary-color; }
-    li .cross {color: $primary-color; }
   }
 }
 
@@ -267,6 +281,16 @@ main {
         .footer-contact {
           padding-top: 1em;
         }
+    }
+
+    .copyright-container {
+      display: flex;
+      flex-direction: column;
+      
+      .legal-links {
+        margin-top: 1em;
+        justify-content: center;
+      }
     }
   }
 } 

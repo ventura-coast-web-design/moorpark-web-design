@@ -2,7 +2,7 @@
 @use "../utils/variables" as *;
 
 .contact-us-button {
-  background-color: $light-primary-color;
+  background-color: $primary-color;
   color: $secondary-color;
   text-decoration: none;
   padding: 0.5rem 1rem;
@@ -14,13 +14,13 @@
   transition: background-color 0.3s ease;
 
   &:hover {
-    background-color: color.adjust($light-primary-color, $lightness: +10%);
+    background-color: color.adjust($primary-color, $lightness: +10%);
   }
 }
 
 .contact-button {
-  background-color: $secondary-color;
-  color: $light-primary-color;
+  background-color: $primary-color;
+  color: white;
   text-decoration: none;
   padding: 0.75rem 1.5rem;
   border: none;
@@ -31,14 +31,14 @@
   transition: background-color 0.3s ease;
 
   &:hover {
-    background-color: color.adjust($secondary-color, $lightness: -20%);
+    background-color: color.adjust($primary-color, $lightness: -10%);
     color: white;
   }
 }
 
 .about-button {
   background-color: transparent;
-  color: $secondary-color;
+  color: $primary-color;
   padding: 0.75rem 1.5rem;
   font-size: 1rem;
   font-weight: bold;
@@ -47,9 +47,9 @@
   transition: background-color 0.3s ease, color 0.3s ease;
 
   &:hover {
-    background-color: $secondary-color;
+    background-color: $light-primary-color;
     color: $primary-color;
-    border: 2px solid $secondary-color;
+    border: 2px solid $primary-color;
     border-radius: 0.25rem;
   }
 } 

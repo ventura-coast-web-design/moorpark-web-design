@@ -45,7 +45,7 @@
       display: block;
       margin-bottom: 0.5rem;
       font-weight: 600;
-      color: $text-color;
+      color: $primary-color;
     }
     
     input,
@@ -120,7 +120,7 @@
       margin: 0;
       
       a {
-        color: $text-color;
+        color: $primary-color;
         text-decoration: none;
         
         &:hover {
@@ -136,7 +136,7 @@
     border-top: 1px solid #e1e1e1;
     
     h3 {
-      color: $secondary-color;
+      color: $primary-color;
       margin-bottom: 1rem;
     }
     
@@ -146,7 +146,7 @@
       
       li {
         margin-bottom: 0.5rem;
-        color: $text-color;
+        color: $primary-color;
       }
     }
   }
