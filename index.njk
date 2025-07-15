@@ -6,8 +6,8 @@ title: Home
 <section class="hero">
     <div id="left-container">
         <p>Hand crafted websites for your small business, simple and effective</p>
-        <h1>Working for you to create a better online presence</h1>
-        <p>We specialize in creating custom websites that are tailored to your business needs. For $175/mo for 24/7 support and updates, we've got you covered.</p>
+        <div class="hero-phrase">CREATE A BETTER ONLINE PRESENCE</div>
+        <p id= "subtext">We specialize in creating custom websites that are tailored to your business needs. For $175/mo for 24/7 support and updates, we've got you covered.</p>
         <div class="hero-buttons">
             <a href="#contact" class="contact-button">Get started</a>
             <a href="#about" class="about-button">About Us</a>
@@ -18,44 +18,40 @@ title: Home
     </div>
 </section>
 
-<section id="services" class="services">
-    <div class="container">
-        <h2>Our Services</h2>
-        <div class="services-grid">
-            <!-- Service cards will go here -->
-        </div>
+<section class="what-we-do">
+  <div class="container">
+    <div class="what-we-do-header">
+      <h3>WHAT WE DO</h3>
+      <h2>Elevate Your Online Presence with Confidence</h2>
+      <p>At Ventura Coast Web Design, we empower small businesses across the US with custom websites that are fast, reliable, and designed to grow with you. Every site we build is handcrafted for performance and search engine success, helping you attract more visitors and convert them into loyal customers. We handle all updates and edits for you, so you can focus on your business while we keep your website running smoothly. Our mission is to build lasting partnerships and support your success every step of the way.</p>
     </div>
-</section>
-
-<section id="portfolio" class="portfolio">
-    <div class="container">
-        <h2>Our Work</h2>
-        <div class="portfolio-grid">
-            <!-- Portfolio items will go here -->
-        </div>
+    <div class="features-grid">
+      <div class="feature-card">
+        <div class="feature-icon"><i class="fa-solid fa-mobile-screen-button"></i></div>
+        <h4>MOBILE FIRST DESIGN</h4>
+        <p>We start building your site for mobile devices first making sure the code is as lean and optimized with no bloated waste and makes the site even more responsive.</p>
+        <a href="#contact">Get Started</a>
+      </div>
+      <div class="feature-card">
+        <div class="feature-icon"><i class="fa-solid fa-display"></i></div>
+        <h4>FULLY RESPONSIVE</h4>
+        <p>Your website will fit all mobile screens sizes, tablets, and desktop sizes so visitors can access your site from anywhere and see a beautiful site no matter the screen size.</p>
+        <a href="#contact">Get Started</a>
+      </div>
+      <div class="feature-card">
+        <div class="feature-icon"><i class="fa-solid fa-stopwatch"></i></div>
+        <h4>OPTIMIZED PAGE SPEED</h4>
+        <p>If your site takes more than 3 seconds to load you can lose up to 50% your traffic because it took too long. Our sites load 1 second or less ensuring everyone that visits your site reaches it.</p>
+        <a href="#contact">More About Page Speed</a>
+      </div>
     </div>
+  </div>
 </section>
 
 {% import "partials/pricing-card-macro.njk" as cards %}
-
 <section class="pricing-section">
+  <h1>PRICING PLANS MADE FOR EVERYONE</h1>
   <div class="container pricing-grid">
-    {{ cards.pricingCard({
-      title: "Lump Sum",
-      features: [
-        {text: "Design And Development", included: true},
-        {text: "$25/mo Hosting", included: true},
-        {text: "$100 fee Per Page after 5", included: true},
-        {text: "+$50/mo Unlimited Edits Add-on", included: true},
-        {text: "+$250 To Add A Blog", included: true},
-        {text: "24/7 Support", included: false},
-        {text: "Lifetime Updates", included: false}
-      ],
-      price: "$3800",
-      price_note: "+$25/mo Hosting",
-      button_text: "Get Started",
-      modifier: "lump-sum"
-    }) }}
     {{ cards.pricingCard({
       title: "Monthly",
       features: [
@@ -71,6 +67,22 @@ title: Home
       price_note: "Per Month",
       button_text: "Get Started",
       modifier: "monthly"
+    }) }}
+    {{ cards.pricingCard({
+      title: "Lump Sum",
+      features: [
+        {text: "Design And Development", included: true},
+        {text: "$25/mo Hosting", included: true},
+        {text: "$100 fee Per Page after 5", included: true},
+        {text: "+$50/mo Unlimited Edits Add-on", included: true},
+        {text: "+$250 To Add A Blog", included: true},
+        {text: "24/7 Support", included: false},
+        {text: "Lifetime Updates", included: false}
+      ],
+      price: "$3800",
+      price_note: "+$25/mo Hosting",
+      button_text: "Get Started",
+      modifier: "lump-sum"
     }) }}
     {{ cards.pricingCard({
       title: "Ecommerce",
@@ -91,11 +103,41 @@ title: Home
   </div>
 </section>
 
-<section id="contact" class="contact">
-    <div class="container">
-        <h2>Get in Touch</h2>
-        <form class="contact-form">
-            <!-- Contact form will go here -->
-        </form>
+<section class="offer-section">
+  <div class="offer-container">
+    <div class="offer-image">
+      <img src="/assets/images/headshot.jpeg" alt="Andrew Ackerman, Owner, Developer" />
+      <div class="offer-name-tag">
+        <strong>ANDREW ACKERMAN</strong><br />Owner, Developer
+      </div>
     </div>
-</section> 
+    <div class="offer-content">
+      <h3>WHAT WE OFFER</h3>
+      <h2>WEBSITES STARTING AT $0 DOWN AND $175 PER MONTH</h2>
+      <p>We offer $0 down for a standard 5 page small business website. If you need more than that then we have to do custom pricing based on the scope of work, number of additional pages, and time involved. <strong>12 month minimum contract.</strong> Includes design, development, hosting, unlimited edits, 24/7 support, and lifetime updates.</p>
+      <div class="offer-features-grid">
+        <div class="offer-feature">
+          <i class="fa-solid fa-shield"></i>
+          <div><strong>100% SECURE</strong><br />Our sites are just static HTML and CSS code, meaning there’s literally nothing that can be hacked.</div>
+        </div>
+        <div class="offer-feature">
+          <i class="fa-solid fa-paintbrush"></i>
+          <div><strong>CUSTOM DESIGNED</strong><br />Our designs are made by an in-house design team, which allows us to make anything we want.</div>
+        </div>
+        <div class="offer-feature">
+          <i class="fa-solid fa-gauge-high"></i>
+          <div><strong>100 PAGESPEED SCORES</strong><br />Our sites have zero bloat, zero waste, and built with purpose so we get perfect 98-100/100 speed scores with Google.</div>
+        </div>
+        <div class="offer-feature">
+          <i class="fa-solid fa-rotate-left"></i>
+          <div><strong>MONEY BACK GUARANTEE</strong><br />If we can’t design something you like, you get your money back and the contract is cancelled. We stand by our work.</div>
+        </div>
+        <div class="offer-feature">
+          <i class="fa-solid fa-headset"></i>
+          <div><strong>UNMATCHED SUPPORT</strong><br />Call or text us anytime, no phone trees or robots. When you call us you get me - the owner and developer.</div>
+        </div>
+      </div>
+      <a href="/contact" class="offer-cta">SCHEDULE A CALL</a>
+    </div>
+  </div>
+</section>
