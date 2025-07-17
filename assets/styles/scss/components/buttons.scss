@@ -2,22 +2,32 @@
 @use "../utils/variables" as *;
 
 .contact-us-button {
-  background-color: $primary-color;
-  color: $secondary-color;
+  background-color: $secondary-color;
+  color: $primary-color !important;
   text-decoration: none;
   padding: 0.5rem 1rem;
   border: none;
   border-radius: 0.25rem;
   font-size: 1rem;
-  font-weight: bold;
+  font-weight: bold !important;
   cursor: pointer;
   transition: background-color 0.3s ease;
 
   &:hover {
     background-color: color.adjust($primary-color, $lightness: +10%);
   }
+
 }
 
+@media (max-width: 48em) {
+  .contact-us-button {
+    display: flex;
+    justify-self: center;
+    background-color: $primary-color;
+    color: $secondary-color !important;
+    align-self: center !important;
+  }
+}
 .contact-button {
   background-color: $primary-color;
   color: white;
