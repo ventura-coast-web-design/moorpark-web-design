@@ -2,40 +2,6 @@
 @use "../utils/mixins" as *;
 @use "sass:color";
 
-.contact-banner {
-  background-color: $secondary-color;
-  color: $primary-color;
-  padding: 0.5rem 0;
-  font-size: 0.9rem;
-  
-  .container {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-  }
-  
-  .contact-info {
-    display: flex;
-    gap: 2rem;
-    align-items: center;
-    
-    span {
-      display: flex;
-      align-items: center;
-      color: $primary-color;
-      gap: 0.5rem;
-    }
-    
-    a {
-      color: $primary-color;
-      text-decoration: none;
-      
-      &:hover {
-        text-decoration: underline;
-      }
-    }
-  }
-}
 
 .header {
   background-color: $primary-color;
@@ -92,4 +58,5 @@
       color: color.adjust($secondary-color, $lightness: -10%);
     }
   }
+
 } 

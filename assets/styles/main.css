@@ -15,36 +15,6 @@ body {
   background-color: White;
 }
 
-.contact-banner {
-  background-color: White;
-  color: #0f6983;
-  padding: 0.5rem 0;
-  font-size: 0.9rem;
-}
-.contact-banner .container {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
-.contact-banner .contact-info {
-  display: flex;
-  gap: 2rem;
-  align-items: center;
-}
-.contact-banner .contact-info span {
-  display: flex;
-  align-items: center;
-  color: #0f6983;
-  gap: 0.5rem;
-}
-.contact-banner .contact-info a {
-  color: #0f6983;
-  text-decoration: none;
-}
-.contact-banner .contact-info a:hover {
-  text-decoration: underline;
-}
-
 .header {
   background-color: #0f6983;
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
@@ -182,7 +152,6 @@ main {
 .hero {
   padding: 8rem 0 1rem 0;
   text-align: center;
-  margin-top: 4.5rem;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -343,16 +312,6 @@ main {
 }
 
 @media (max-width: 48em) {
-  .contact-banner .container {
-    flex-direction: column;
-    gap: 1rem;
-    text-align: center;
-  }
-  .contact-banner .contact-info {
-    flex-direction: row;
-    justify-content: space-around;
-    gap: 2rem;
-  }
   .header .nav {
     flex-direction: row;
     justify-content: space-between;
@@ -386,9 +345,11 @@ main {
     max-height: 20rem;
     padding: 1rem 1.5rem 1.5rem 1.5rem;
   }
+  .nav-links.open li a {
+    color: #0f6983;
+  }
   .hero {
-    padding: 6rem 0 4rem 0;
-    margin-top: 5rem;
+    padding: 1rem 0 4rem 0;
   }
   .hero #left-container {
     width: 100%;
@@ -1039,15 +1000,99 @@ main {
     font-size: 1rem;
   }
 }
+.webdesign-hero {
+  padding: 10rem 0 3rem 0;
+  background: #0f6983;
+  color: white;
+  text-align: center;
+  position: relative;
+}
+.webdesign-hero h1 {
+  font-size: 2.7rem;
+  font-weight: 800;
+  margin-bottom: 1.2rem;
+  letter-spacing: -1px;
+}
+.webdesign-hero .lead {
+  font-size: 1.25rem;
+  font-weight: 400;
+  margin-bottom: 0;
+  color: rgb(229.5, 229.5, 229.5);
+}
+
+.webdesign-content {
+  background: #fff;
+  border-radius: 1.5rem;
+  box-shadow: 0 2px 12px rgba(0, 0, 0, 0.07);
+  max-width: 900px;
+  margin: 2rem auto 4rem auto;
+  padding: 2.5rem 2rem 2.5rem 2rem;
+  font-size: 1.08rem;
+  color: #0f6983;
+}
+.webdesign-content h2 {
+  color: #0f6983;
+  font-size: 1.4rem;
+  font-weight: 700;
+  margin-bottom: 1.2rem;
+  margin-top: 2.2rem;
+  text-align: left;
+}
+.webdesign-content p {
+  color: #0f6983;
+  margin-bottom: 1.2rem;
+  line-height: 1.7;
+}
+.webdesign-content ul {
+  padding-left: 1.2em;
+  margin-bottom: 1.5rem;
+}
+.webdesign-content ul li {
+  margin-bottom: 0.5em;
+  list-style: disc;
+  color: #0f6983;
+  font-weight: 500;
+}
+.webdesign-content strong {
+  color: #0f6983;
+  font-weight: 700;
+}
+.webdesign-content .cta-btn {
+  display: inline-block;
+  margin-top: 2rem;
+  background: #0f6983;
+  color: white;
+  font-weight: 700;
+  padding: 0.9rem 2.2rem;
+  border-radius: 2rem;
+  font-size: 1.1rem;
+  text-decoration: none;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+  transition: background 0.2s, color 0.2s;
+}
+.webdesign-content .cta-btn:hover {
+  background: rgb(9.7602739726, 68.3219178082, 85.2397260274);
+  color: white;
+}
+
+@media (max-width: 600px) {
+  .webdesign-content {
+    padding: 1.2rem 0.5rem 1.5rem 0.5rem;
+    font-size: 1rem;
+  }
+  .webdesign-hero h1 {
+    font-size: 2rem;
+  }
+}
 .contact-us-button {
-  background-color: #0f6983;
-  color: White;
+  background-color: White;
+  color: #0f6983 !important;
   text-decoration: none;
   padding: 0.5rem 1rem;
   border: none;
   border-radius: 0.25rem;
   font-size: 1rem;
-  font-weight: bold;
+  font-weight: bold !important;
   cursor: pointer;
   transition: background-color 0.3s ease;
 }
@@ -1055,6 +1100,15 @@ main {
   background-color: rgb(20.2397260274, 141.6780821918, 176.7602739726);
 }
 
+@media (max-width: 48em) {
+  .contact-us-button {
+    display: flex;
+    justify-self: center;
+    background-color: #0f6983;
+    color: White !important;
+    align-self: center !important;
+  }
+}
 .contact-button {
   background-color: #0f6983;
   color: white;
