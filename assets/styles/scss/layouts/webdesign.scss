@@ -1,0 +1,89 @@
+@use "../utils/variables" as *;
+@use "sass:color";
+
+.webdesign-hero {
+  padding: 10rem 0 3rem 0;
+  background: $primary-color;
+  color: white;
+  text-align: center;
+  position: relative;
+
+  h1 {
+    font-size: 2.7rem;
+    font-weight: 800;
+    margin-bottom: 1.2rem;
+    letter-spacing: -1px;
+  }
+  .lead {
+    font-size: 1.25rem;
+    font-weight: 400;
+    margin-bottom: 0;
+    color: color.adjust(white, $lightness: -10%);
+  }
+}
+
+.webdesign-content {
+  background: #fff;
+  border-radius: 1.5rem;
+  box-shadow: 0 2px 12px rgba(0,0,0,0.07);
+  max-width: 900px;
+  margin: 2rem auto 4rem auto;
+  padding: 2.5rem 2rem 2.5rem 2rem;
+  font-size: 1.08rem;
+  color: $primary-color;
+
+  h2 {
+    color: $primary-color;
+    font-size: 1.4rem;
+    font-weight: 700;
+    margin-bottom: 1.2rem;
+    margin-top: 2.2rem;
+    text-align: left;
+  }
+  p {
+    color: $primary-color;
+    margin-bottom: 1.2rem;
+    line-height: 1.7;
+  }
+  ul {
+    padding-left: 1.2em;
+    margin-bottom: 1.5rem;
+    li {
+      margin-bottom: 0.5em;
+      list-style: disc;
+      color: $primary-color;
+      font-weight: 500;
+    }
+  }
+  strong {
+    color: $primary-color;
+    font-weight: 700;
+  }
+  .cta-btn {
+    display: inline-block;
+    margin-top: 2rem;
+    background: $primary-color;
+    color: white;
+    font-weight: 700;
+    padding: 0.9rem 2.2rem;
+    border-radius: 2rem;
+    font-size: 1.1rem;
+    text-decoration: none;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+    transition: background 0.2s, color 0.2s;
+    &:hover {
+      background: color.adjust($primary-color, $lightness: -10%);
+      color: white;
+    }
+  }
+}
+
+@media (max-width: 600px) {
+  .webdesign-content {
+    padding: 1.2rem 0.5rem 1.5rem 0.5rem;
+    font-size: 1rem;
+  }
+  .webdesign-hero h1 {
+    font-size: 2rem;
+  }
+}
