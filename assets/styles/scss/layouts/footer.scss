@@ -21,12 +21,18 @@
 
     .footer-links {
       color: $primary-color;
-    
-      li a {
-        text-decoration: none;
-        color: $primary-color;
 
+      ul {
+        padding-left: 1em;
+
+
+        li a {
+          text-decoration: none;
+          color: $primary-color;
+  
+        }
       }
+    
     }
   }
 

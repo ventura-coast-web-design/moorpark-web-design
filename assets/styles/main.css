@@ -99,7 +99,10 @@ h1 {
 .footer-top .footer-top-container .footer-links {
   color: #0f6983;
 }
-.footer-top .footer-top-container .footer-links li a {
+.footer-top .footer-top-container .footer-links ul {
+  padding-left: 1em;
+}
+.footer-top .footer-top-container .footer-links ul li a {
   text-decoration: none;
   color: #0f6983;
 }
@@ -282,7 +285,7 @@ main {
   color: #0f6983;
 }
 .pricing-card .features li .cross {
-  color: #0f6983;
+  color: white;
 }
 .pricing-card .price {
   font-size: 2.2rem;
