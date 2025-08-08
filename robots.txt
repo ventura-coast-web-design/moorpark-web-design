@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 # Uncomment and update the next line if you have a sitemap
-# Sitemap: https://venturacoastwebdesign.com/sitemap.xml 
+Sitemap: https://venturacoastwebdesign.com/sitemap.xml 
