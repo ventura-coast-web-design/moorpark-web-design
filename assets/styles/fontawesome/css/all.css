@@ -1,0 +1,102 @@
+/*!
+ * Font Awesome Free 6.7.2 by @fontawesome - https://fontawesome.com
+ * License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License)
+ * Copyright 2024 Fonticons, Inc.
+ */
+.fa {
+  font-family: var(--fa-style-family, "Font Awesome 6 Free");
+  font-weight: var(--fa-style, 900); }
+
+.fas,
+.far,
+.fab,
+.fa-solid,
+.fa-regular,
+.fa-brands,
+.fa {
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-font-smoothing: antialiased;
+  display: var(--fa-display, inline-block);
+  font-style: normal;
+  font-variant: normal;
+  line-height: 1;
+  text-rendering: auto; }
+
+.fas::before,
+.far::before,
+.fab::before,
+.fa-solid::before,
+.fa-regular::before,
+.fa-brands::before,
+.fa::before {
+  content: var(--fa); }
+
+.fa-classic,
+.fas,
+.fa-solid,
+.far,
+.fa-regular {
+  font-family: 'Font Awesome 6 Free'; }
+
+
+/* Font Awesome uses the Unicode Private Use Area (PUA) to ensure screen
+readers do not read off random characters that represent icons */
+
+.fa-phone {
+--fa: "\f095"; }
+
+.fa-envelope {
+--fa: "\f0e0"; }
+
+.fa-clock {
+--fa: "\f017"; }
+
+.fa-location-dot {
+--fa: "\f3c5"; }
+
+.fa-mobile-screen-button {
+--fa: "\f3cd"; }
+
+
+.fa-display {
+--fa: "\e163"; }
+
+.fa-stopwatch {
+--fa: "\f2f2"; }
+
+
+.fa-shield {
+--fa: "\f132"; }
+
+
+.fa-paintbrush {
+--fa: "\f1fc"; }
+
+.fa-gauge-high {
+--fa: "\f625"; }
+
+.fa-rotate-left {
+--fa: "\f2ea"; }
+
+.fa-headset {
+  --fa: "\f590"; }
+
+.fa-bars {
+--fa: "\f0c9"; }
+@font-face {
+  font-family: 'Font Awesome 6 Free';
+  font-style: normal;
+  font-weight: 400;
+  font-display: block;
+  src: url("../webfonts/fa-regular-400.woff2") format("woff2"), url("../webfonts/fa-regular-400.ttf") format("truetype"); }
+
+
+@font-face {
+  font-family: 'Font Awesome 6 Free';
+  font-style: normal;
+  font-weight: 900;
+  font-display: block;
+  src: url("../webfonts/fa-solid-900.woff2") format("woff2"), url("../webfonts/fa-solid-900.ttf") format("truetype"); }
+
+.fa-solid {
+  font-weight: 900; }
