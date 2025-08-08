@@ -137,6 +137,20 @@ h1 {
   flex-direction: row;
   justify-content: space-between;
 }
+.copyright-container .attribution {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.2em;
+}
+.copyright-container .attribution .image-attribution {
+  font-size: 0.5em;
+  color: white;
+}
+.copyright-container .attribution .image-attribution a {
+  text-decoration: none;
+  color: white;
+}
 .copyright-container .legal-links {
   display: flex;
   flex-direction: row;
@@ -1091,6 +1105,245 @@ main {
   }
   .webdesign-hero h1 {
     font-size: 2rem;
+  }
+}
+.portfolio-section {
+  padding: 4rem 0;
+  background: White;
+}
+.portfolio-section .portfolio-header {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 3rem;
+  margin-bottom: 3rem;
+  align-items: start;
+}
+.portfolio-section .portfolio-header .portfolio-title h3 {
+  color: #0f6983;
+  font-size: 1.1rem;
+  letter-spacing: 0.15em;
+  font-weight: 700;
+  margin-bottom: 0.5rem;
+  text-transform: uppercase;
+}
+.portfolio-section .portfolio-header .portfolio-title h2 {
+  color: #0f6983;
+  font-size: 2.5rem;
+  font-weight: 800;
+  line-height: 1.1;
+  text-transform: uppercase;
+}
+.portfolio-section .portfolio-header .portfolio-description p {
+  color: #0f6983;
+  font-size: 1.1rem;
+  line-height: 1.7;
+  margin: 0;
+}
+.portfolio-section .portfolio-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 2rem;
+}
+@media (max-width: 64em) {
+  .portfolio-section .portfolio-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+@media (max-width: 48em) {
+  .portfolio-section .portfolio-grid {
+    grid-template-columns: repeat(1, 1fr);
+  }
+}
+.portfolio-section .portfolio-item {
+  text-align: center;
+  background-color: white;
+  border-radius: 0.5rem;
+  padding: 1rem;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+.portfolio-section .portfolio-item .portfolio-devices {
+  position: relative;
+  margin-bottom: 1.5rem;
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  gap: 1rem;
+}
+.portfolio-section .portfolio-item .portfolio-devices .device img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 0.5rem;
+}
+.portfolio-section .portfolio-item .portfolio-devices .device.laptop {
+  flex: 2;
+}
+.portfolio-section .portfolio-item .portfolio-devices .device.laptop img {
+  padding: 10px;
+  background-color: white;
+  border-radius: 0.5rem 0.5rem 0 0;
+}
+.portfolio-section .portfolio-item h3 {
+  color: #0f6983;
+  font-size: 1.5rem;
+  font-weight: 700;
+  margin-bottom: 1rem;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+}
+.portfolio-section .portfolio-item p {
+  color: #0f6983;
+  font-size: 1rem;
+  line-height: 1.6;
+  margin-bottom: 1.5rem;
+}
+.portfolio-section .portfolio-item .visit-website-btn {
+  display: inline-block;
+  background: #0f6983;
+  color: white;
+  padding: 0.75rem 1.5rem;
+  border-radius: 0.25rem;
+  text-decoration: none;
+  font-weight: 600;
+  text-transform: uppercase;
+  font-size: 0.9rem;
+  letter-spacing: 0.05em;
+  transition: background 0.2s;
+}
+.portfolio-section .portfolio-item .visit-website-btn:hover {
+  background: rgb(9.7602739726, 68.3219178082, 85.2397260274);
+  color: white;
+}
+
+.hero {
+  padding: 8rem 0 1rem 0;
+  text-align: center;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #FEE4AE;
+  background-image: radial-gradient(circle at 25% 25%, rgba(255, 255, 255, 0.1) 0%, transparent 50%), radial-gradient(circle at 75% 75%, rgba(255, 255, 255, 0.1) 0%, transparent 50%);
+  position: relative;
+  overflow: hidden;
+}
+.hero::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: linear-gradient(45deg, transparent 30%, rgba(255, 255, 255, 0.05) 50%, transparent 70%);
+  animation: shimmer 3s ease-in-out infinite;
+}
+
+@keyframes shimmer {
+  0%, 100% {
+    transform: translateX(-100%);
+  }
+  50% {
+    transform: translateX(100%);
+  }
+}
+#left-container {
+  width: 50%;
+  padding-left: 1em;
+  color: #0f6983;
+}
+#left-container p {
+  font-size: 1.3em;
+  margin-bottom: 1.5rem;
+  opacity: 0.9;
+  font-weight: 400;
+}
+#left-container #subtext {
+  font-size: 1em;
+  margin-bottom: 2rem;
+  line-height: 1.6;
+  opacity: 0.8;
+}
+#left-container .hero-phrase {
+  font-size: 2.5em;
+  font-weight: 900;
+  margin-bottom: 1.5rem;
+  background: linear-gradient(135deg, #0f6983 0%, rgb(4.5205479452, 31.6438356164, 39.4794520548) 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  text-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  letter-spacing: -0.02em;
+}
+
+.hero-buttons {
+  margin-top: 2em;
+  display: flex;
+  gap: 1rem;
+  justify-content: center;
+  align-items: center;
+}
+.hero-buttons .contact-button {
+  background: linear-gradient(135deg, #0f6983 0%, rgb(9.7602739726, 68.3219178082, 85.2397260274) 100%);
+  color: white;
+  padding: 1rem 2rem;
+  border-radius: 2rem;
+  text-decoration: none;
+  font-weight: 700;
+  font-size: 1.1rem;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 15px rgba(15, 105, 131, 0.3);
+  position: relative;
+  overflow: hidden;
+}
+.hero-buttons .contact-button::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: -100%;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.2), transparent);
+  transition: left 0.5s;
+}
+.hero-buttons .contact-button:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 20px rgba(15, 105, 131, 0.4);
+}
+.hero-buttons .contact-button:hover::before {
+  left: 100%;
+}
+.hero-buttons .about-button {
+  color: #0f6983;
+  padding: 1rem 2rem;
+  font-size: 1.1rem;
+  font-weight: 600;
+  text-decoration: none;
+  transition: all 0.3s ease;
+  border: 2px solid transparent;
+  border-radius: 2rem;
+}
+.hero-buttons .about-button:hover {
+  color: #0f6983;
+  border-color: #0f6983;
+  background: rgba(15, 105, 131, 0.05);
+}
+
+.floating-element {
+  position: absolute;
+  top: 20%;
+  right: 10%;
+  width: 100px;
+  height: 100px;
+  background: linear-gradient(45deg, rgba(15, 105, 131, 0.1), rgba(15, 105, 131, 0.05));
+  border-radius: 50%;
+  animation: float 6s ease-in-out infinite;
+  z-index: 1;
+}
+
+@keyframes float {
+  0%, 100% {
+    transform: translateY(0px) rotate(0deg);
+  }
+  50% {
+    transform: translateY(-20px) rotate(180deg);
   }
 }
 .contact-us-button {
