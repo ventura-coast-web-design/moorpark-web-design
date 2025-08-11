@@ -12,6 +12,12 @@
     margin-bottom: 3rem;
     align-items: start;
     
+    @media (max-width: 48em) {
+      grid-template-columns: 1fr;
+      gap: 2rem;
+      text-align: center;
+    }
+    
     .portfolio-title {
       h3 {
         color: $primary-color;

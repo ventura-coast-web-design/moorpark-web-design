@@ -1118,6 +1118,13 @@ main {
   margin-bottom: 3rem;
   align-items: start;
 }
+@media (max-width: 48em) {
+  .portfolio-section .portfolio-header {
+    grid-template-columns: 1fr;
+    gap: 2rem;
+    text-align: center;
+  }
+}
 .portfolio-section .portfolio-header .portfolio-title h3 {
   color: #0f6983;
   font-size: 1.1rem;
