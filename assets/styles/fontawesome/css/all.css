@@ -100,3 +100,37 @@ readers do not read off random characters that represent icons */
 
 .fa-solid {
   font-weight: 900; }
+
+  @font-face {
+    font-family: "Font Awesome 7 Brands";
+    font-style: normal;
+    font-weight: 400;
+    font-display: block;
+    src: url("../webfonts/fa-brands-400.woff2");
+  }
+.fab,
+.fa-brands,
+.fa-classic.fa-brands {
+  font-family: "Font Awesome 7 Brands";
+  --fa-family: var(--fa-family-brands);
+  --fa-style: 400;
+}
+
+.fab::before,
+.fa-brands::before {
+  content: var(--fa);
+}
+
+.fa-facebook { --fa: "\f09a"; }
+.fa-instagram { --fa: "\f16d"; }
+
+@font-face {
+  font-family: "FontAwesome";
+  font-display: block;
+  src: url("../webfonts/fa-brands-400.woff2") format("woff2");
+}
+
+:root, :host {
+  --fa-family-brands: "Font Awesome 7 Brands";
+  --fa-font-brands: normal 400 1em/1 var(--fa-family-brands);
+}

@@ -41,16 +41,39 @@
 
     p {
       display: flex;
-      flex-direction: row;
       align-items: center;
+      margin: 0.5rem 0;
 
       i {
-        padding: 0.5em;
+        margin-right: 0.5rem;
+        width: 1.2rem;
       }
 
-     a {
-      text-decoration: none;
-      color: $primary-color;
+      a {
+        text-decoration: none;
+        color: $primary-color;
+      }
+    }
+
+    .footer-contact-social {
+      margin-top: 1rem;
+
+      p {
+        margin-bottom: 0.5rem;
+        font-weight: 600;
+      }
+
+      .footer-contact-social-icons {
+        display: flex;
+        gap: 1rem;
+
+        a {
+          display: inline-block;
+          font-size: 1.5rem;
+          color: $primary-color;
+
+
+        }
       }
     }
   }

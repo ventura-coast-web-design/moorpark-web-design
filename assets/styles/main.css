@@ -111,14 +111,31 @@ h1 {
 }
 .footer-top .footer-contact p {
   display: flex;
-  flex-direction: row;
   align-items: center;
+  margin: 0.5rem 0;
 }
 .footer-top .footer-contact p i {
-  padding: 0.5em;
+  margin-right: 0.5rem;
+  width: 1.2rem;
 }
 .footer-top .footer-contact p a {
   text-decoration: none;
+  color: #0f6983;
+}
+.footer-top .footer-contact .footer-contact-social {
+  margin-top: 1rem;
+}
+.footer-top .footer-contact .footer-contact-social p {
+  margin-bottom: 0.5rem;
+  font-weight: 600;
+}
+.footer-top .footer-contact .footer-contact-social .footer-contact-social-icons {
+  display: flex;
+  gap: 1rem;
+}
+.footer-top .footer-contact .footer-contact-social .footer-contact-social-icons a {
+  display: inline-block;
+  font-size: 1.5rem;
   color: #0f6983;
 }
 
