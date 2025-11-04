@@ -178,11 +178,31 @@
     font-weight: 400;
   }
   
-  #subtext {
-    font-size: 1em;
-    margin-bottom: 2rem;
-    line-height: 1.6;
-    opacity: 0.8;
+  .hero-features {
+    list-style: none;
+    padding: 0;
+    margin: 2.5rem 0;
+    text-align: left;
+    max-width: 700px;
+    margin-left: auto;
+    margin-right: auto;
+    
+    li {
+      font-size: 1.5em;
+      font-weight: 700;
+      line-height: 1.6;
+      display: flex;
+      align-items: center;
+      gap: 1.25rem;
+      margin-bottom: 1.5rem;
+      letter-spacing: 0.02em;
+      
+      i {
+        color: $primary-color;
+        font-size: 1.3em;
+        flex-shrink: 0;
+      }
+    }
   }
   
   .hero-phrase {

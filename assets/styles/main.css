@@ -1306,11 +1306,29 @@ main {
   opacity: 0.9;
   font-weight: 400;
 }
-#left-container #subtext {
-  font-size: 1em;
-  margin-bottom: 2rem;
+#left-container .hero-features {
+  list-style: none;
+  padding: 0;
+  margin: 2.5rem 0;
+  text-align: left;
+  max-width: 700px;
+  margin-left: auto;
+  margin-right: auto;
+}
+#left-container .hero-features li {
+  font-size: 1.5em;
+  font-weight: 700;
   line-height: 1.6;
-  opacity: 0.8;
+  display: flex;
+  align-items: center;
+  gap: 1.25rem;
+  margin-bottom: 1.5rem;
+  letter-spacing: 0.02em;
+}
+#left-container .hero-features li i {
+  color: #0f6983;
+  font-size: 1.3em;
+  flex-shrink: 0;
 }
 #left-container .hero-phrase {
   font-size: 2.5em;
