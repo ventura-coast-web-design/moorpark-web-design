@@ -41,9 +41,12 @@
 
 /* Font Awesome uses the Unicode Private Use Area (PUA) to ensure screen
 readers do not read off random characters that represent icons */
+.fa-check-circle {
+--fa: "\f058"; }
 
 .fa-phone {
 --fa: "\f095"; }
+
 
 .fa-envelope {
 --fa: "\f0e0"; }
