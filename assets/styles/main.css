@@ -1308,7 +1308,7 @@ main {
 }
 #left-container .hero-features {
   list-style: none;
-  padding: 0;
+  padding-left: 3em;
   margin: 2.5rem 0;
   text-align: left;
   max-width: 700px;
